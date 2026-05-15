@@ -14,6 +14,8 @@ type transkasi struct {
 	status  string
 }
 
+
+
 func main() {
 	fmt.Print("== SIKAS ==")
 	fmt.Println()
@@ -70,4 +72,13 @@ func main() {
 			break
 		}
 	}
+}
+
+func tambahMahasiswa() {
+	var mhs mahasiswa
+	fmt.Print("Nama: ")
+	fmt.Scan(&mhs.nama)
+	fmt.Print("NIM: ")
+	fmt.Scan(&mhs.nim)
+	fmt.Println("== Mahasiswa Berhasil Ditambahkan ==")
 }

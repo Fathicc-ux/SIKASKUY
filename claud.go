@@ -22,7 +22,7 @@ type Payment struct {
 type Student struct {
 	NIM      string      // nomor induk mahasiswa yang bersifat unik (@jebb_24)
 	Name     string      // nama lengkap mahasiswa (@jebb_24)
-	Payments [20]Payment // array riwayat pembayaran maksimal 20 transaksi (@jebb_24)
+	Payments [20]Payment // array riwayat pembayaran maksimal 20 transaksi (@jebb_24)``
 	PayCount int         // jumlah transaksi yang sudah tercatat (@jebb_24)
 	Active   bool        // status aktif; false berarti sudah dihapus secara soft delete (@jebb_24)
 }

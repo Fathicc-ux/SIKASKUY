@@ -4,15 +4,47 @@ import "fmt"
 
 type mahasiswa struct {
 	nama, nim string
+	Jumlahtransaksi int
+	statusmhs bool
+	riwayattransaksi [100]transkasi
 }
-type transkasi struct {
-	nim     string
+type pembayaran struct {
 	nominal int
 	tanggal int
 	bulan   int
 	tahun   int
-	status  string
+	catatan  string
 }
+
+type kas struct {
+	mahasiswa [100]mahasiswa
+}
+var kas kas
+
+func tambahmahasiswa(nama string, nim string) {
+	var nim string
+	fmt.Print("NIM: ")
+	fmt.Scan(&nim)
+
+	var nama string
+	fmt.Print("Nama: ")
+	fmt.Scan(&nama)
+	
+	kas.mahasiswa[kas.mahasiswa[0].Jumlahtransaksi].nama = nama
+	kas.mahasiswa[kas.mahasiswa[0].Jumlahtransaksi].nim = nim
+	kas.mahasiswa[kas.mahasiswa[0].Jumlahtransaksi].statusmhs = true
+	kas.mahasiswa[0].Jumlahtransaksi++
+	fmt.Println("Mahasiswa berhasil ditambahkan.")
+
+}
+//type transkasi struct {
+	//nim     string
+	//nominal int
+	//tanggal int
+	//bulan   int
+	//tahun   int
+	//status  string
+//}
 
 
 
@@ -74,11 +106,4 @@ func main() {
 	}
 }
 
-func tambahMahasiswa() {
-	var mhs mahasiswa
-	fmt.Print("Nama: ")
-	fmt.Scan(&mhs.nama)
-	fmt.Print("NIM: ")
-	fmt.Scan(&mhs.nim)
-	fmt.Println("== Mahasiswa Berhasil Ditambahkan ==")
-}
+

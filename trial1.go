@@ -1,0 +1,250 @@
+package main
+import "fmt"
+
+type mahasiswa struct {
+	NIM	 string
+	Nama string
+	tunggakan int
+	status bool
+}
+
+type Database struct {
+	mahasiswa [100]mahasiswa
+	mahasiswaCount int
+
+}
+
+var DB Database
+
+func tambahMahasiswa(A *Database) {
+	if A.mahasiswaCount <= 100 {
+	
+		var mhs mahasiswa
+
+		fmt.Print("Nama: ")
+		fmt.Scan(&mhs.Nama)
+
+		fmt.Print("NIM: ")
+		fmt.Scan(&mhs.NIM)
+
+		mhs.tunggakan = 0
+		mhs.status = false
+		A.mahasiswa[A.mahasiswaCount] = mhs
+		A.mahasiswaCount++
+		fmt.Println("== Mahasiswa Berhasil Ditambahkan ==")
+	} else {
+		fmt.Println("== Database Mahasiswa Penuh ==")
+	}
+}
+
+func updatemahasiswa(A *Database) {
+	var nim string
+	var indeks int
+
+
+	fmt.Print("Masukkan NIM Mahasiswa yang akan diupdate: ")
+	fmt.Scan(&nim)
+
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+		return
+	}else {
+		fmt.Print("Nama: ")
+		fmt.Scan(&A.mahasiswa[indeks].Nama)
+
+		fmt.Print("NIM: ")
+		fmt.Scan(&A.mahasiswa[indeks].NIM)
+		
+		fmt.Println("== Mahasiswa Berhasil Diupdate ==")
+	}
+}
+
+func hapusMahasiswa(A *Database) {
+	var nim string
+	var indeks int
+	var i int
+
+	fmt.Print("Masukkan NIM Mahasiswa yang akan dihapus: ")
+	fmt.Scan(&nim)
+
+	squentialsearch(A, nim, &indeks)
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+		
+	}else {
+		for i = indeks; i < A.mahasiswaCount-1; i++ {
+			A.mahasiswa[i] = A.mahasiswa[i+1]
+		}
+		A.mahasiswaCount--
+		fmt.Println("== Mahasiswa Berhasil Dihapus ==")
+	}
+}
+
+func cariMahasiswa(A *Database, nim string) int {
+	var i int
+	var indeks int
+	indeks = -1
+	
+	for i = 0; i < A.mahasiswaCount; i++ {
+		if A.mahasiswa[i].NIM == nim {
+			indeks = i
+		
+			i = i + 1
+		}
+
+	}
+	return indeks
+}
+
+
+func squentialsearch(A *Database, nim string, indeks *int){
+	var i int
+	*indeks = -1
+
+	for i = 0; i < A.mahasiswaCount; i++ {
+		if A.mahasiswa[i].NIM == nim {
+			*indeks = i
+			
+		}
+	}
+}
+
+func carisquentialsearch(A *Database) {
+	var nim string
+	var indeks int
+	
+	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
+	fmt.Scan(&nim)
+	squentialsearch(A, nim, &indeks)
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+	} else {
+		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+	}
+}
+
+func caribinarysearch(A *Database) {
+	var nim string
+	var indeks int
+
+	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
+	fmt.Scan(&nim)
+	sort(A)
+	binarysearch(A, nim, &indeks)
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+	} else {
+		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+	}	
+}
+
+func binarysearch(A *Database, nim string, indeks *int) {
+	var kanan, kiri, tengah int
+	
+
+	*indeks = -1
+	kiri = 0
+	kanan = A.mahasiswaCount - 1
+
+	for kiri <= kanan {
+		tengah = (kiri + kanan) / 2
+		
+		if A.mahasiswa[tengah].NIM == nim {
+			*indeks = tengah
+			kiri = kanan + 1
+		} else if A.mahasiswa[tengah].NIM < nim {
+			kiri = tengah + 1
+		} else {
+			kanan = tengah - 1
+		}
+	}
+}
+
+func sort(A *Database) {
+	var i, j int
+	var sementara mahasiswa
+
+	for i = 0; i < A.mahasiswaCount-1; i++ {
+		sementara = A.mahasiswa[i]
+		j = i - 1
+		
+		for j >= 0 && A.mahasiswa[j].NIM > sementara.NIM {
+			A.mahasiswa[j+1] = A.mahasiswa[j]
+			j = j - 1
+		}
+		A.mahasiswa[j+1] = sementara
+	}
+}
+
+func tampil(A *Database) {
+
+	var i int
+
+	for i = 0; i < A.mahasiswaCount; i++ {
+
+		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
+		fmt.Println("Nama :", A.mahasiswa[i].Nama)
+		fmt.Println("-----")
+	}
+}
+
+func main() {
+
+	var pilih int
+	pilih = -1
+
+	for pilih != 0 {
+
+		fmt.Println()
+		fmt.Println("===== SIKAS =====")
+		fmt.Println("1. Tambah")
+		fmt.Println("2. Tampil")
+		fmt.Println("3. Update")
+		fmt.Println("4. Hapus")
+		fmt.Println("5. Cari Sequential")
+		fmt.Println("6. Cari Binary")
+		fmt.Println("0. Keluar")
+
+		fmt.Print("Pilih: ")
+		fmt.Scan(&pilih)
+
+		if pilih == 1 {
+
+			tambahMahasiswa(&DB)
+
+		} else if pilih == 2 {
+
+			tampil(&DB)
+
+		} else if pilih == 3 {
+
+			updatemahasiswa(&DB)
+
+		} else if pilih == 4 {
+
+			hapusMahasiswa(&DB)
+
+		} else if pilih == 5 {
+
+			carisquentialsearch(&DB)
+
+		} else if pilih == 6 {
+
+			caribinarysearch(&DB)
+
+		} else if pilih == 0 {
+
+			fmt.Println("Selesai")
+
+		} else {
+
+			fmt.Println("Menu salah")
+		}
+	}
+}
+	
+
+
+	

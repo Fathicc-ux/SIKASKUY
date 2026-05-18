@@ -133,6 +133,8 @@ func cari_squential(A *Database) {
 			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
 		} else {
 			fmt.Println("Mahasiswa Sudah Membayar secara Lunas")
+			fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
 		}
 	}
 }
@@ -154,6 +156,8 @@ func cari_binary(A *Database) {
 			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
 		} else {
 			fmt.Println("Mahasiswa Sudah Membayar secara Lunas")
+			fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
 		}
 	}
 }

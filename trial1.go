@@ -6,12 +6,20 @@ type mahasiswa struct {
 	Nama string
 	tunggakan int
 	statuspembayaraan bool
+	riwayat [100]transaksi
+	jumlahbayar int
+	
 }
 
 type Database struct {
 	mahasiswa [100]mahasiswa
 	mahasiswaCount int
 
+}
+
+type transaksi struct {
+	tanggal string
+	nominal int
 }
 
 var DB Database
@@ -190,6 +198,23 @@ func tampil(A *Database) {
 		fmt.Println("-----")
 	}
 }
+
+func bayar(A *Database) {
+	var nim string
+	var indeks int
+
+	fmt.Print("Masukkan NIM Mahasiswa yang akan melakukan pembayaran: ")
+	fmt.Scan(&nim)
+	squential(A, nim, &indeks)
+
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+	}else{
+		fmt.Print("Masukan Tanggal Pembayaran (DD/MM/YYYY): "
+		fmt.Scan(&transaksi.tanggal)
+
+		
+	}
 
 func main() {
 

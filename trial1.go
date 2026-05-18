@@ -127,8 +127,13 @@ func cari_squential(A *Database) {
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	} else {
-		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
-		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+		if A.mahasiswa[indeks].statuspembayaraan == false {
+			fmt.Println("== Daftar Mahasiswa Belum Lunas ==")
+			fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+		} else {
+			fmt.Println("Mahasiswa Sudah Membayar secara Lunas")
+		}
 	}
 }
 
@@ -143,9 +148,14 @@ func cari_binary(A *Database) {
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	} else {
-		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
-		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
-	}	
+		if A.mahasiswa[indeks].statuspembayaraan == false {
+			fmt.Println("== Daftar Mahasiswa Belum Lunas ==")
+			fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+		} else {
+			fmt.Println("Mahasiswa Sudah Membayar secara Lunas")
+		}
+	}
 }
 
 func binary(A *Database, nim string, indeks *int) {

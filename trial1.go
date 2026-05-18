@@ -8,7 +8,7 @@ type mahasiswa struct {
 	statuspembayaraan bool
 	riwayat [100]transaksi
 	jumlahbayar int
-	bbb int
+	
 }
 
 type Database struct {
@@ -188,20 +188,31 @@ func sort(A *Database) {
 }
 
 func tampil(A *Database) {
-
 	var i int
 
-	for i = 0; i < A.mahasiswaCount; i++ {
-		fmt.Println("-----")
-		fmt.Println("Nama :", A.mahasiswa[i].Nama)
-		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
-		fmt.Println("-----")
+	if A.mahasiswaCount == 0 {
+		fmt.Println("== Database Mahasiswa Kosong ==")
+	}else {
+		fmt.Println("== Daftar Status Pembayaran Mahasiswa ==")
+	
+		for i = 0; i < A.mahasiswaCount; i++ {
+		
+			fmt.Println("Nama :", A.mahasiswa[i].Nama)
+			fmt.Println("NIM  :", A.mahasiswa[i].NIM)
+				
+			if A.mahasiswa[i].statuspembayaraan == true {
+				fmt.Println("Status Pembayaran: Lunas")
+			} else {
+				fmt.Println("Status Pembayaran: Belum Lunas")
+			}
+		}
 	}
 }
 
 func bayar(A *Database) {
 	var nim string
 	var indeks int
+	var bayar transaksi
 
 	fmt.Print("Masukkan NIM Mahasiswa yang akan melakukan pembayaran: ")
 	fmt.Scan(&nim)
@@ -210,11 +221,18 @@ func bayar(A *Database) {
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	}else{
-		fmt.Print("Masukan Tanggal Pembayaran (DD/MM/YYYY): "
-		fmt.Scan(&transaksi.tanggal)
+		fmt.Print("Masukan Tanggal Pembayaran (DD/MM/YYYY): ")
+		fmt.Scan(&bayar.tanggal)
 
-		
+		fmt.Print("Masukan Nominal Pembayaran: ")
+		fmt.Scan(&bayar.nominal)
+
+		A.mahasiswa[indeks].riwayat[A.mahasiswa[indeks].jumlahbayar] = bayar
+		A.mahasiswa[indeks].jumlahbayar++
+		A.mahasiswa[indeks].statuspembayaraan = true
+		fmt.Println("== Pembayaran Berhasil Dicatat ==")		
 	}
+}
 
 func main() {
 
@@ -229,8 +247,9 @@ func main() {
 		fmt.Println("2. Tampil")
 		fmt.Println("3. Ubah")
 		fmt.Println("4. Hapus")
-		fmt.Println("5. Cari Sequential")
-		fmt.Println("6. Cari Binary")
+		fmt.Println("5. Bayar")
+		fmt.Println("6. Cari Sequential")
+		fmt.Println("7. Cari Binary")
 		fmt.Println("0. Keluar")
 
 		fmt.Print("Pilih: ")
@@ -251,12 +270,15 @@ func main() {
 		} else if pilih == 4 {
 
 			hapus(&DB)
+		}else if pilih == 5 {
+			
+			bayar(&DB)
 
-		} else if pilih == 5 {
+		} else if pilih == 6 {
 
 			cari_squential(&DB)
 
-		} else if pilih == 6 {
+		} else if pilih == 7 {
 
 			cari_binary(&DB)
 

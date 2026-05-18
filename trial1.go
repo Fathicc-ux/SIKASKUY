@@ -5,7 +5,7 @@ type mahasiswa struct {
 	NIM	 string
 	Nama string
 	tunggakan int
-	status bool
+	statuspembayaraan bool
 }
 
 type Database struct {
@@ -28,7 +28,7 @@ func tambah(A *Database) {
 		fmt.Scan(&mhs.NIM)
 
 		mhs.tunggakan = 0
-		mhs.status = false
+		mhs.statuspembayaraan = false
 		A.mahasiswa[A.mahasiswaCount] = mhs
 		A.mahasiswaCount++
 		fmt.Println("== Mahasiswa Berhasil Ditambahkan ==")
@@ -161,6 +161,8 @@ func binary(A *Database, nim string, indeks *int) {
 		}
 	}
 }
+
+
 func sort(A *Database) {
 	var i, j int
 	var sementara mahasiswa

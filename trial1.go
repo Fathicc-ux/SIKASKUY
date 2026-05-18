@@ -8,7 +8,7 @@ type mahasiswa struct {
 	statuspembayaraan bool
 	riwayat [100]transaksi
 	jumlahbayar int
-	
+	bbb int
 }
 
 type Database struct {

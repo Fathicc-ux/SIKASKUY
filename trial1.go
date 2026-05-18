@@ -16,8 +16,8 @@ type Database struct {
 
 var DB Database
 
-func tambahMahasiswa(A *Database) {
-	if A.mahasiswaCount <= 100 {
+func tambah(A *Database) {
+	if A.mahasiswaCount < 100 {
 	
 		var mhs mahasiswa
 
@@ -36,14 +36,26 @@ func tambahMahasiswa(A *Database) {
 		fmt.Println("== Database Mahasiswa Penuh ==")
 	}
 }
+func tampil(A *Database) {
 
-func updatemahasiswa(A *Database) {
+	var i int
+
+	for i = 0; i < A.mahasiswaCount; i++ {
+
+		fmt.Println("Nama :", A.mahasiswa[i].Nama)
+		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
+		fmt.Println("-----")
+	}
+}
+
+func ubah(A *Database) {
 	var nim string
 	var indeks int
 
 
 	fmt.Print("Masukkan NIM Mahasiswa yang akan diupdate: ")
 	fmt.Scan(&nim)
+	squentialsearch(A, nim, &indeks)
 
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
@@ -80,22 +92,21 @@ func hapusMahasiswa(A *Database) {
 	}
 }
 
-func cariMahasiswa(A *Database, nim string) int {
-	var i int
-	var indeks int
-	indeks = -1
+// func cariMahasiswa(A *Database, nim string) int {
+// 	var i int
+// 	var indeks int
+// 	indeks = -1
 	
-	for i = 0; i < A.mahasiswaCount; i++ {
-		if A.mahasiswa[i].NIM == nim {
-			indeks = i
+// 	for i = 0; i < A.mahasiswaCount; i++ {
+// 		if A.mahasiswa[i].NIM == nim {
+// 			indeks = i
 		
-			i = i + 1
-		}
+// 			i = i + 1
+// 		}
 
-	}
-	return indeks
-}
-
+// 	}
+// 	return indeks
+// }
 
 func squentialsearch(A *Database, nim string, indeks *int){
 	var i int
@@ -166,7 +177,7 @@ func sort(A *Database) {
 	var i, j int
 	var sementara mahasiswa
 
-	for i = 0; i < A.mahasiswaCount-1; i++ {
+	for i = 1; i < A.mahasiswaCount-1; i++ {
 		sementara = A.mahasiswa[i]
 		j = i - 1
 		
@@ -175,18 +186,6 @@ func sort(A *Database) {
 			j = j - 1
 		}
 		A.mahasiswa[j+1] = sementara
-	}
-}
-
-func tampil(A *Database) {
-
-	var i int
-
-	for i = 0; i < A.mahasiswaCount; i++ {
-
-		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
-		fmt.Println("Nama :", A.mahasiswa[i].Nama)
-		fmt.Println("-----")
 	}
 }
 
@@ -212,7 +211,7 @@ func main() {
 
 		if pilih == 1 {
 
-			tambahMahasiswa(&DB)
+			tambah(&DB)
 
 		} else if pilih == 2 {
 
@@ -220,7 +219,7 @@ func main() {
 
 		} else if pilih == 3 {
 
-			updatemahasiswa(&DB)
+			ubah(&DB)
 
 		} else if pilih == 4 {
 

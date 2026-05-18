@@ -36,17 +36,6 @@ func tambah(A *Database) {
 		fmt.Println("== Database Mahasiswa Penuh ==")
 	}
 }
-func tampil(A *Database) {
-
-	var i int
-
-	for i = 0; i < A.mahasiswaCount; i++ {
-		fmt.Println("-----")
-		fmt.Println("Nama :", A.mahasiswa[i].Nama)
-		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
-		fmt.Println("-----")
-	}
-}
 
 func ubah(A *Database) {
 	var nim string
@@ -120,10 +109,11 @@ func squentialsearch(A *Database, nim string, indeks *int){
 	}
 }
 
-func carisquentialsearch(A *Database) {
+func cari_squential(A *Database) {
 	var nim string
 	var indeks int
 	
+	fmt.Println("====")
 	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
 	fmt.Scan(&nim)
 	squentialsearch(A, nim, &indeks)
@@ -135,7 +125,7 @@ func carisquentialsearch(A *Database) {
 	}
 }
 
-func caribinarysearch(A *Database) {
+func cari_binary(A *Database) {
 	var nim string
 	var indeks int
 
@@ -172,7 +162,6 @@ func binarysearch(A *Database, nim string, indeks *int) {
 		}
 	}
 }
-
 func sort(A *Database) {
 	var i, j int
 	var sementara mahasiswa
@@ -186,6 +175,18 @@ func sort(A *Database) {
 			j = j - 1
 		}
 		A.mahasiswa[j+1] = sementara
+	}
+}
+
+func tampil(A *Database) {
+
+	var i int
+
+	for i = 0; i < A.mahasiswaCount; i++ {
+		fmt.Println("-----")
+		fmt.Println("Nama :", A.mahasiswa[i].Nama)
+		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
+		fmt.Println("-----")
 	}
 }
 
@@ -227,11 +228,11 @@ func main() {
 
 		} else if pilih == 5 {
 
-			carisquentialsearch(&DB)
+			cari_squential(&DB)
 
 		} else if pilih == 6 {
 
-			caribinarysearch(&DB)
+			cari_binary(&DB)
 
 		} else if pilih == 0 {
 

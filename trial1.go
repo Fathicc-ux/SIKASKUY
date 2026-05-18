@@ -71,7 +71,7 @@ func ubah(A *Database) {
 	}
 }
 
-func hapusMahasiswa(A *Database) {
+func hapus(A *Database) {
 	var nim string
 	var indeks int
 	var i int
@@ -223,7 +223,7 @@ func main() {
 
 		} else if pilih == 4 {
 
-			hapusMahasiswa(&DB)
+			hapus(&DB)
 
 		} else if pilih == 5 {
 

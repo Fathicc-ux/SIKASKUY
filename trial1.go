@@ -104,7 +104,6 @@ func squential(A *Database, nim string, indeks *int){
 	for i = 0; i < A.mahasiswaCount; i++ {
 		if A.mahasiswa[i].NIM == nim {
 			*indeks = i
-			
 		}
 	}
 }

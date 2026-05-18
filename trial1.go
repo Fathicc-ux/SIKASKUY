@@ -41,7 +41,7 @@ func tampil(A *Database) {
 	var i int
 
 	for i = 0; i < A.mahasiswaCount; i++ {
-
+		fmt.Println("-----")
 		fmt.Println("Nama :", A.mahasiswa[i].Nama)
 		fmt.Println("NIM  :", A.mahasiswa[i].NIM)
 		fmt.Println("-----")
@@ -200,7 +200,7 @@ func main() {
 		fmt.Println("===== SIKAS =====")
 		fmt.Println("1. Tambah")
 		fmt.Println("2. Tampil")
-		fmt.Println("3. Update")
+		fmt.Println("3. Ubah")
 		fmt.Println("4. Hapus")
 		fmt.Println("5. Cari Sequential")
 		fmt.Println("6. Cari Binary")

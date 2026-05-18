@@ -44,7 +44,7 @@ func ubah(A *Database) {
 
 	fmt.Print("Masukkan NIM Mahasiswa yang akan diupdate: ")
 	fmt.Scan(&nim)
-	squentialsearch(A, nim, &indeks)
+	squential(A, nim, &indeks)
 
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
@@ -68,7 +68,7 @@ func hapus(A *Database) {
 	fmt.Print("Masukkan NIM Mahasiswa yang akan dihapus: ")
 	fmt.Scan(&nim)
 
-	squentialsearch(A, nim, &indeks)
+	squential(A, nim, &indeks)
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 		
@@ -97,7 +97,7 @@ func hapus(A *Database) {
 // 	return indeks
 // }
 
-func squentialsearch(A *Database, nim string, indeks *int){
+func squential(A *Database, nim string, indeks *int){
 	var i int
 	*indeks = -1
 
@@ -116,7 +116,7 @@ func cari_squential(A *Database) {
 	fmt.Println("====")
 	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
 	fmt.Scan(&nim)
-	squentialsearch(A, nim, &indeks)
+	squential(A, nim, &indeks)
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	} else {
@@ -132,7 +132,7 @@ func cari_binary(A *Database) {
 	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
 	fmt.Scan(&nim)
 	sort(A)
-	binarysearch(A, nim, &indeks)
+	binary(A, nim, &indeks)
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	} else {
@@ -141,7 +141,7 @@ func cari_binary(A *Database) {
 	}	
 }
 
-func binarysearch(A *Database, nim string, indeks *int) {
+func binary(A *Database, nim string, indeks *int) {
 	var kanan, kiri, tengah int
 	
 

@@ -33,9 +33,6 @@ func main() {
 		fmt.Println(" 1. Kelola Data Mahasiswa")
 		fmt.Println(" 2. Bayar Kas")
 		fmt.Println(" 3. Cari Mahasiswa")
-		fmt.Println(" 4. Urutkan Mahasiswa")
-		fmt.Println(" 5. Daftar Mahasiswa Bertunggakan")
-		fmt.Println(" 6. Statistik Kas")
 		fmt.Println(" 0. Keluar")
 		fmt.Println("----------------------------------------------------------------------------")
 		fmt.Print(" Pilihan Anda : ")
@@ -50,12 +47,6 @@ func main() {
 			prosesPembayaran()
 		case 3:
 			menuCariMahasiswa()
-		case 4:
-			menuUrutMahasiswa()
-		case 5:
-			tampilkanDaftarTunggakan()
-		case 6:
-			tampilkanStatistikKas()
 		case 0:
 			fmt.Println("\n                 Terima kasih telah menggunakan sistem ini.")
 			fmt.Println("============================================================================")
@@ -75,8 +66,7 @@ func menuKelolaData() {
 		fmt.Println("============================================================================")
 		fmt.Println(" 1. Tambah Mahasiswa")
 		fmt.Println(" 2. Ubah Mahasiswa")
-		fmt.Println(" 3. Tampilkan Semua")
-		fmt.Println(" 4. Hapus Mahasiswa")
+		fmt.Println(" 3. Hapus Mahasiswa")
 		fmt.Println(" 0. Kembali")
 		fmt.Println("----------------------------------------------------------------------------")
 		fmt.Print(" Pilihan Anda : ")
@@ -89,8 +79,6 @@ func menuKelolaData() {
 		case 2:
 			ubahMahasiswa()
 		case 3:
-			tampilkanSemuaMahasiswa()
-		case 4:
 			hapusMahasiswa()
 		case 0:
 			return
@@ -186,28 +174,6 @@ func ubahMahasiswa() {
 		db.DataMahasiswa[idx].Nama = namaBaru
 	}
 	fmt.Println(" BERHASIL: Data mahasiswa berhasil diubah.")
-	fmt.Println("============================================================================")
-}
-
-func tampilkanSemuaMahasiswa() {
-	fmt.Println("============================================================================")
-	fmt.Println("                            DAFTAR MAHASISWA")
-	fmt.Println("============================================================================")
-	if db.JumlahData == 0 {
-		fmt.Println(" Database mahasiswa kosong.")
-		fmt.Println("============================================================================")
-		return
-	}
-	fmt.Printf(" %-3s | %-12s | %-25s | %-11s | %-9s\n", "No", "NIM", "Nama", "Tunggakan", "Status")
-	fmt.Println("-----+--------------+---------------------------+-------------+-----------")
-	for i := 0; i < db.JumlahData; i++ {
-		status := "Belum Lunas"
-		if db.DataMahasiswa[i].StatusLunas {
-			status = "Lunas"
-		}
-		fmt.Printf(" %-3d | %-12s | %-25s | %-11d | %-9s\n",
-			i+1, db.DataMahasiswa[i].NIM, db.DataMahasiswa[i].Nama, db.DataMahasiswa[i].Tunggakan, status)
-	}
 	fmt.Println("============================================================================")
 }
 
@@ -503,250 +469,4 @@ func cariDenganBinary() {
 		fmt.Println(" Pilihan tidak valid.")
 		fmt.Println("============================================================================")
 	}
-}
-
-// ==================== PENGURUTAN ====================
-func menuUrutMahasiswa() {
-	if db.JumlahData == 0 {
-		fmt.Println("============================================================================")
-		fmt.Println(" Database kosong, tidak ada data yang bisa diurut.")
-		fmt.Println("============================================================================")
-		return
-	}
-	for {
-		fmt.Println("============================================================================")
-		fmt.Println("                         URUT DATA MAHASISWA")
-		fmt.Println("============================================================================")
-		fmt.Println(" 1. Selection Sort")
-		fmt.Println(" 2. Insertion Sort")
-		fmt.Println(" 0. Kembali")
-		fmt.Println("----------------------------------------------------------------------------")
-		fmt.Print(" Pilihan Anda : ")
-		var metode int
-		fmt.Scan(&metode)
-		fmt.Scanln()
-
-		if metode == 0 {
-			return
-		}
-		if metode != 1 && metode != 2 {
-			fmt.Println(" Pilihan tidak valid.")
-			// tidak ada continue, langsung lanjut iterasi berikutnya
-		} else {
-			// metode valid
-			fmt.Println("============================================================================")
-			fmt.Println(" Kriteria urutan :")
-			fmt.Println(" 1. Nama")
-			fmt.Println(" 2. NIM")
-			fmt.Println(" 3. Tunggakan")
-			fmt.Println(" 0. Kembali")
-			fmt.Println("----------------------------------------------------------------------------")
-			fmt.Print(" Pilihan Anda : ")
-			var pilihKriteria int
-			fmt.Scan(&pilihKriteria)
-			fmt.Scanln()
-
-			if pilihKriteria == 0 {
-				return
-			}
-			if pilihKriteria < 1 || pilihKriteria > 3 {
-				fmt.Println(" Kriteria tidak valid.")
-				// skip ke iterasi berikutnya
-			} else {
-				// kriteria valid
-				var kriteria string
-				switch pilihKriteria {
-				case 1:
-					kriteria = "nama"
-				case 2:
-					kriteria = "nim"
-				case 3:
-					kriteria = "tunggakan"
-				}
-				fmt.Println("============================================================================")
-				fmt.Println(" Arah urutan :")
-				fmt.Println(" 1. Ascending (kecil ke besar)")
-				fmt.Println(" 2. Descending (besar ke kecil)")
-				fmt.Println("----------------------------------------------------------------------------")
-				fmt.Print(" Pilihan Anda : ")
-				var pilihArah int
-				fmt.Scan(&pilihArah)
-				fmt.Scanln()
-
-				if pilihArah != 1 && pilihArah != 2 {
-					fmt.Println(" Arah tidak valid.")
-					// skip
-				} else {
-					ascending := pilihArah == 1
-					if metode == 1 {
-						selectionSort(kriteria, ascending)
-						fmt.Println(" BERHASIL: Data diurutkan dengan Selection Sort.")
-					} else {
-						insertionSort(kriteria, ascending)
-						fmt.Println(" BERHASIL: Data diurutkan dengan Insertion Sort.")
-					}
-					fmt.Println("============================================================================")
-					tampilkanSemuaMahasiswa()
-				}
-			}
-		}
-	}
-}
-
-func bandingkan(i, j int, kriteria string, ascending bool) bool {
-	if kriteria == "nama" {
-		if ascending {
-			return db.DataMahasiswa[i].Nama < db.DataMahasiswa[j].Nama
-		}
-		return db.DataMahasiswa[i].Nama > db.DataMahasiswa[j].Nama
-	} else if kriteria == "nim" {
-		if ascending {
-			return db.DataMahasiswa[i].NIM < db.DataMahasiswa[j].NIM
-		}
-		return db.DataMahasiswa[i].NIM > db.DataMahasiswa[j].NIM
-	} else {
-		if ascending {
-			return db.DataMahasiswa[i].Tunggakan < db.DataMahasiswa[j].Tunggakan
-		}
-		return db.DataMahasiswa[i].Tunggakan > db.DataMahasiswa[j].Tunggakan
-	}
-}
-
-func selectionSort(kriteria string, ascending bool) {
-	for i := 0; i < db.JumlahData-1; i++ {
-		idxMin := i
-		for j := i + 1; j < db.JumlahData; j++ {
-			if bandingkan(j, idxMin, kriteria, ascending) {
-				idxMin = j
-			}
-		}
-		if idxMin != i {
-			db.DataMahasiswa[i], db.DataMahasiswa[idxMin] = db.DataMahasiswa[idxMin], db.DataMahasiswa[i]
-		}
-	}
-}
-
-func insertionSort(kriteria string, ascending bool) {
-	for i := 1; i < db.JumlahData; i++ {
-		temp := db.DataMahasiswa[i]
-		j := i - 1
-		for j >= 0 && bandingkan(j+1, j, kriteria, ascending) {
-			db.DataMahasiswa[j+1] = db.DataMahasiswa[j]
-			j--
-		}
-		db.DataMahasiswa[j+1] = temp
-	}
-}
-
-// ==================== DAFTAR TUNGGAKAN ====================
-func tampilkanDaftarTunggakan() {
-	if db.JumlahData == 0 {
-		fmt.Println("============================================================================")
-		fmt.Println(" Belum ada data mahasiswa.")
-		fmt.Println("============================================================================")
-		return
-	}
-	var bertunggakan [100]Mahasiswa
-	jumlahTunggak := 0
-	for i := 0; i < db.JumlahData; i++ {
-		if db.DataMahasiswa[i].Tunggakan > 0 {
-			bertunggakan[jumlahTunggak] = db.DataMahasiswa[i]
-			jumlahTunggak++
-		}
-	}
-	if jumlahTunggak == 0 {
-		fmt.Println("============================================================================")
-		fmt.Println(" Seluruh mahasiswa telah LUNAS.")
-		fmt.Println("============================================================================")
-		return
-	}
-	fmt.Println("============================================================================")
-	fmt.Println("                   DAFTAR MAHASISWA BERTUNGGAKAN")
-	fmt.Println("============================================================================")
-	fmt.Println(" Pilih urutan :")
-	fmt.Println(" 1. Ascending (tunggakan kecil ke besar)")
-	fmt.Println(" 2. Descending (tunggakan besar ke kecil)")
-	fmt.Println(" 0. Kembali")
-	fmt.Println("----------------------------------------------------------------------------")
-	fmt.Print(" Pilihan Anda : ")
-	var pilih int
-	fmt.Scan(&pilih)
-	fmt.Scanln()
-	if pilih == 0 {
-		return
-	}
-	if pilih != 1 && pilih != 2 {
-		fmt.Println(" Pilihan tidak valid.")
-		fmt.Println("============================================================================")
-		return
-	}
-	// bubble sort
-	for i := 0; i < jumlahTunggak-1; i++ {
-		for j := i + 1; j < jumlahTunggak; j++ {
-			if pilih == 1 {
-				if bertunggakan[i].Tunggakan > bertunggakan[j].Tunggakan {
-					bertunggakan[i], bertunggakan[j] = bertunggakan[j], bertunggakan[i]
-				}
-			} else {
-				if bertunggakan[i].Tunggakan < bertunggakan[j].Tunggakan {
-					bertunggakan[i], bertunggakan[j] = bertunggakan[j], bertunggakan[i]
-				}
-			}
-		}
-	}
-	fmt.Printf(" %-3s | %-12s | %-25s | %-11s\n", "No", "NIM", "Nama", "Tunggakan")
-	fmt.Println("-----+--------------+---------------------------+------------")
-	for i := 0; i < jumlahTunggak; i++ {
-		fmt.Printf(" %-3d | %-12s | %-25s | %-11d\n", i+1, bertunggakan[i].NIM, bertunggakan[i].Nama, bertunggakan[i].Tunggakan)
-	}
-	fmt.Println("============================================================================")
-}
-
-// ==================== STATISTIK KAS ====================
-func tampilkanStatistikKas() {
-	fmt.Println("============================================================================")
-	fmt.Println("                           STATISTIK KAS")
-	fmt.Println("============================================================================")
-	if db.JumlahData == 0 {
-		fmt.Println(" Belum ada data mahasiswa.")
-		fmt.Println("============================================================================")
-		return
-	}
-	totalPembayaran := 0
-	totalTunggakan := 0
-	jumlahLunas := 0
-	jumlahBelumLunas := 0
-	for i := 0; i < db.JumlahData; i++ {
-		dibayar := 0
-		for j := 0; j < db.DataMahasiswa[i].JumlahTransaksi; j++ {
-			dibayar += db.DataMahasiswa[i].RiwayatBayar[j].Nominal
-		}
-		totalPembayaran += dibayar
-		if db.DataMahasiswa[i].StatusLunas {
-			jumlahLunas++
-		} else {
-			jumlahBelumLunas++
-			totalTunggakan += db.DataMahasiswa[i].Tunggakan
-		}
-	}
-	targetTotal := TARGET_IURAN * db.JumlahData
-	persentase := float64(totalPembayaran) / float64(targetTotal) * 100
-
-	fmt.Println(" RINGKASAN KAS MAHASISWA")
-	fmt.Println("----------------------------------------------------------------------------")
-	fmt.Printf(" Jumlah Mahasiswa         : %d\n", db.JumlahData)
-	fmt.Printf(" Target Iuran per Orang   : Rp %d\n", TARGET_IURAN)
-	fmt.Printf(" Target Total Kas         : Rp %d\n", targetTotal)
-	fmt.Println("----------------------------------------------------------------------------")
-	fmt.Printf(" Mahasiswa LUNAS          : %d\n", jumlahLunas)
-	fmt.Printf(" Mahasiswa BELUM LUNAS    : %d\n", jumlahBelumLunas)
-	fmt.Println("----------------------------------------------------------------------------")
-	fmt.Printf(" Total Pembayaran Masuk   : Rp %d\n", totalPembayaran)
-	fmt.Printf(" Total Tunggakan          : Rp %d\n", totalTunggakan)
-	fmt.Printf(" Persentase Kelunasan     : %.2f%%\n", persentase)
-	if jumlahBelumLunas > 0 {
-		rataRata := totalTunggakan / jumlahBelumLunas
-		fmt.Printf(" Rata-rata Tunggakan (BL) : Rp %d\n", rataRata)
-	}
-	fmt.Println("============================================================================")
 }

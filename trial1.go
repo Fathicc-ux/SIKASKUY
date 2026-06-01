@@ -1,4 +1,5 @@
 //contoh saja
+//baru contoh
 
 package main
 import "fmt"

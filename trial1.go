@@ -342,6 +342,10 @@ func main() {
 		fmt.Println("5. Bayar")
 		fmt.Println("6. Cari Sequential")
 		fmt.Println("7. Cari Binary")
+		fmt.Println("8.  selectionsortAscending")
+		fmt.Println("9. selectionsortDescending")
+		fmt.Println("10. insertionsortAscending")
+		fmt.Println("11. insertionsortDescending")
 		fmt.Println("0. Keluar")
 
 		fmt.Print("Pilih: ")

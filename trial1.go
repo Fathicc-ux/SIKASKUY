@@ -140,21 +140,6 @@ func cari_squential(A *Database) {
 	}
 }
 
-func cari_binary(A *Database) {
-	var nim string
-	var indeks int
-
-	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
-	fmt.Scan(&nim)
-	insertionsort(A)
-	binary(A, nim, &indeks)
-	if indeks == -1 {
-		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
-	} else {
-		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
-		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
-	}	
-}
 
 func binary(A *Database, nim string, indeks *int) {
 	var kanan, kiri, tengah int
@@ -177,34 +162,114 @@ func binary(A *Database, nim string, indeks *int) {
 	}
 }
 
-func selectionsort(A *Database){
-	for i:=0; i<A.mahasiswaCount-1; i++{
-		min:=i
-		for j:=i+1; j<A.mahasiswaCount; j++{
-			if A.mahasiswa[min].Nama > A.mahasiswa[j].Nama || A.mahasiswa[min].tunggakan > A.mahasiswa[j].tunggakan{
-				min = j
+func cari_binary(A *Database) {
+	var nim string
+	var indeks int
+
+	fmt.Print("Masukkan NIM Mahasiswa yang akan dicari: ")
+	fmt.Scan(&nim)
+	insertionsort(A)
+	binary(A, nim, &indeks)
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+	} else {
+		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
+		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+	}	
+}
+
+func selectionsortAscending(A *Database, kategori string){
+	var i, j, indeks int
+	var sementara mahasiswa
+
+	for i = 0; i < A.mahasiswaCount-1; i++ {
+		indeks = i
+		for j = i + 1; j < A.mahasiswaCount; j++ {
+			if kategori == "Nama" {
+				if A.mahasiswa[j].Nama < A.mahasiswa[indeks].Nama {
+					indeks = j
+				}
+			} else if kategori == "Tunggakan" {
+				if A.mahasiswa[j].tunggakan < A.mahasiswa[indeks].tunggakan {
+					indeks = j
+				}
 			}
 		}
-		temp:= A.mahasiswa[i]
-		A.mahasiswa[i] = A.mahasiswa[min]
-		A.mahasiswa[min] = temp
+		sementara = A.mahasiswa[i]
+		A.mahasiswa[i] = A.mahasiswa[indeks]
+		A.mahasiswa[indeks] = sementara
 	}
 }
-func insertionsort(A *Database) {
+
+
+func selectionsortDescending(A *Database, kategori string){
+	var i, j, indeks int
+	var sementara mahasiswa
+
+	for i = 0; i < A.mahasiswaCount-1; i++ {
+		indeks = i
+		for j = i + 1; j < A.mahasiswaCount; j++ {
+			if kategori == "Nama" {
+				if A.mahasiswa[j].Nama > A.mahasiswa[indeks].Nama {
+					indeks = j
+				}
+			} else if kategori == "Tunggakan" {
+				if A.mahasiswa[j].tunggakan > A.mahasiswa[indeks].tunggakan {
+					indeks = j
+				}
+			}
+		}
+		sementara = A.mahasiswa[i]
+		A.mahasiswa[i] = A.mahasiswa[indeks]
+		A.mahasiswa[indeks] = sementara
+	}
+}
+
+func insertionsortAscending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
 
 	for i = 1; i < A.mahasiswaCount; i++ {
 		sementara = A.mahasiswa[i]
 		j = i - 1
-		
-		for j >= 0 && A.mahasiswa[j].Nama > sementara.Nama ||  A.mahasiswa[j].tunggakan > sementara.tunggakan{
-			A.mahasiswa[j+1] = A.mahasiswa[j]
-			j = j - 1
+		if kategori == "Nama" {
+			for j >= 0 && A.mahasiswa[j].Nama > sementara.Nama {
+				A.mahasiswa[j+1] = A.mahasiswa[j]
+				j--
+			}
+		} else if kategori == "Tunggakan" {
+			for j >= 0 && A.mahasiswa[j].tunggakan > sementara.tunggakan {
+				A.mahasiswa[j+1] = A.mahasiswa[j]
+				j--
+			}
 		}
 		A.mahasiswa[j+1] = sementara
 	}
 }
+
+func insertionsortDescending(A *Database, kategori string) {
+	var i, j int
+	var sementara mahasiswa
+	for i = 1; i < A.mahasiswaCount; i++ {
+		sementara = A.mahasiswa[i]
+		j = i - 1
+
+		if kategori == "Nama" {
+			for j >= 0 && A.mahasiswa[j].Nama < sementara.Nama {
+				A.mahasiswa[j+1] = A.mahasiswa[j]
+				j--
+			}
+		} else if kategori == "Tunggakan" {
+			for j >= 0 && A.mahasiswa[j].tunggakan < sementara.tunggakan {
+				A.mahasiswa[j+1] = A.mahasiswa[j]
+				j--
+			}
+		}
+		A.mahasiswa[j+1] = sementara
+	}
+}
+
+
 
 func tampil(A *Database) {
 	var i int

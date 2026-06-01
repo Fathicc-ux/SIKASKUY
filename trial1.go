@@ -1,3 +1,5 @@
+//contoh saja
+
 package main
 import "fmt"
 

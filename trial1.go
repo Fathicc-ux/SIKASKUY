@@ -15,8 +15,8 @@ type mahasiswa struct {
 }
 
 type Database struct {
-	mahasiswa [100]mahasiswa
-	mahasiswaCount int
+	Mahasiswa [100]mahasiswa
+	MahasiswaCount int
 }
 
 type transaksi struct {
@@ -27,7 +27,7 @@ type transaksi struct {
 var DB Database
 
 func tambah(A *Database) {
-	if A.mahasiswaCount < 100 {
+	if A.MahasiswaCount < 100 {
 	
 		var mhs mahasiswa
 
@@ -39,8 +39,8 @@ func tambah(A *Database) {
 
 		mhs.tunggakan = 0
 		mhs.statuspembayaraan = false
-		A.mahasiswa[A.mahasiswaCount] = mhs
-		A.mahasiswaCount++
+		A.Mahasiswa[A.MahasiswaCount] = mhs
+		A.MahasiswaCount++
 		fmt.Println("== Mahasiswa Berhasil Ditambahkan ==")
 	} else {
 		fmt.Println("== Database Mahasiswa Penuh ==")
@@ -61,10 +61,10 @@ func ubah(A *Database) {
 		return
 	}else {
 		fmt.Print("Nama: ")
-		fmt.Scan(&A.mahasiswa[indeks].Nama)
+		fmt.Scan(&A.Mahasiswa[indeks].Nama)
 
 		fmt.Print("NIM: ")
-		fmt.Scan(&A.mahasiswa[indeks].NIM)
+		fmt.Scan(&A.Mahasiswa[indeks].NIM)
 		
 		fmt.Println("== Mahasiswa Berhasil Diupdate ==")
 	}
@@ -83,10 +83,10 @@ func hapus(A *Database) {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 		
 	}else {
-		for i = indeks; i < A.mahasiswaCount-1; i++ {
-			A.mahasiswa[i] = A.mahasiswa[i+1]
+		for i = indeks; i < A.MahasiswaCount-1; i++ {
+			A.Mahasiswa[i] = A.Mahasiswa[i+1]
 		}
-		A.mahasiswaCount--
+		A.MahasiswaCount--
 		fmt.Println("== Mahasiswa Berhasil Dihapus ==")
 	}
 }
@@ -96,8 +96,8 @@ func hapus(A *Database) {
 // 	var indeks int
 // 	indeks = -1
 	
-// 	for i = 0; i < A.mahasiswaCount; i++ {
-// 		if A.mahasiswa[i].NIM == nim {
+// 	for i = 0; i < A.MahasiswaCount; i++ {
+// 		if A.Mahasiswa[i].NIM == nim {
 // 			indeks = i
 		
 // 			i = i + 1
@@ -111,8 +111,8 @@ func squential(A *Database, nim string, indeks *int){
 	var i int
 	*indeks = -1
 
-	for i = 0; i < A.mahasiswaCount; i++ {
-		if A.mahasiswa[i].NIM == nim {
+	for i = 0; i < A.MahasiswaCount; i++ {
+		if A.Mahasiswa[i].NIM == nim {
 			*indeks = i
 		}
 	}
@@ -128,14 +128,14 @@ func cari_squential(A *Database) {
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	} else {
-		if A.mahasiswa[indeks].statuspembayaraan == false {
+		if A.Mahasiswa[indeks].statuspembayaraan == false {
 			fmt.Println("== Daftar Mahasiswa Belum Lunas ==")
-			fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
-			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+			fmt.Println("NIM  :", A.Mahasiswa[indeks].NIM)
+			fmt.Println("Nama :", A.Mahasiswa[indeks].Nama)
 		} else {
 			fmt.Println("Mahasiswa Sudah Membayar secara Lunas")
-			fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
-			fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+			fmt.Println("NIM  :", A.Mahasiswa[indeks].NIM)
+			fmt.Println("Nama :", A.Mahasiswa[indeks].Nama)
 		}
 	}
 }
@@ -146,15 +146,15 @@ func binary(A *Database, nim string, indeks *int) {
 	
 	*indeks = -1
 	kiri = 0
-	kanan = A.mahasiswaCount - 1
+	kanan = A.MahasiswaCount - 1
 
 	for kiri <= kanan {
 		tengah = (kiri + kanan) / 2
 		
-		if A.mahasiswa[tengah].NIM == nim {
+		if A.Mahasiswa[tengah].NIM == nim {
 			*indeks = tengah
 			kiri = kanan + 1
-		} else if A.mahasiswa[tengah].NIM < nim {
+		} else if A.Mahasiswa[tengah].NIM < nim {
 			kiri = tengah + 1
 		} else {
 			kanan = tengah - 1
@@ -173,8 +173,8 @@ func cari_binary(A *Database) {
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 	} else {
-		fmt.Println("NIM  :", A.mahasiswa[indeks].NIM)
-		fmt.Println("Nama :", A.mahasiswa[indeks].Nama)
+		fmt.Println("NIM  :", A.Mahasiswa[indeks].NIM)
+		fmt.Println("Nama :", A.Mahasiswa[indeks].Nama)
 	}	
 }
 
@@ -182,22 +182,22 @@ func selectionsortAscending(A *Database, kategori string){
 	var i, j, indeks int
 	var sementara mahasiswa
 
-	for i = 0; i < A.mahasiswaCount-1; i++ {
+	for i = 0; i < A.MahasiswaCount-1; i++ {
 		indeks = i
-		for j = i + 1; j < A.mahasiswaCount; j++ {
+		for j = i + 1; j < A.MahasiswaCount; j++ {
 			if kategori == "Nama" {
-				if A.mahasiswa[j].Nama < A.mahasiswa[indeks].Nama {
+				if A.Mahasiswa[j].Nama < A.Mahasiswa[indeks].Nama {
 					indeks = j
 				}
 			} else if kategori == "Tunggakan" {
-				if A.mahasiswa[j].tunggakan < A.mahasiswa[indeks].tunggakan {
+				if A.Mahasiswa[j].tunggakan < A.Mahasiswa[indeks].tunggakan {
 					indeks = j
 				}
 			}
 		}
-		sementara = A.mahasiswa[i]
-		A.mahasiswa[i] = A.mahasiswa[indeks]
-		A.mahasiswa[indeks] = sementara
+		sementara = A.Mahasiswa[i]
+		A.Mahasiswa[i] = A.Mahasiswa[indeks]
+		A.Mahasiswa[indeks] = sementara
 	}
 }
 
@@ -206,22 +206,22 @@ func selectionsortDescending(A *Database, kategori string){
 	var i, j, indeks int
 	var sementara mahasiswa
 
-	for i = 0; i < A.mahasiswaCount-1; i++ {
+	for i = 0; i < A.MahasiswaCount-1; i++ {
 		indeks = i
-		for j = i + 1; j < A.mahasiswaCount; j++ {
+		for j = i + 1; j < A.MahasiswaCount; j++ {
 			if kategori == "Nama" {
-				if A.mahasiswa[j].Nama > A.mahasiswa[indeks].Nama {
+				if A.Mahasiswa[j].Nama > A.Mahasiswa[indeks].Nama {
 					indeks = j
 				}
 			} else if kategori == "Tunggakan" {
-				if A.mahasiswa[j].tunggakan > A.mahasiswa[indeks].tunggakan {
+				if A.Mahasiswa[j].tunggakan > A.Mahasiswa[indeks].tunggakan {
 					indeks = j
 				}
 			}
 		}
-		sementara = A.mahasiswa[i]
-		A.mahasiswa[i] = A.mahasiswa[indeks]
-		A.mahasiswa[indeks] = sementara
+		sementara = A.Mahasiswa[i]
+		A.Mahasiswa[i] = A.Mahasiswa[indeks]
+		A.Mahasiswa[indeks] = sementara
 	}
 }
 
@@ -229,43 +229,43 @@ func insertionsortAscending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
 
-	for i = 1; i < A.mahasiswaCount; i++ {
-		sementara = A.mahasiswa[i]
+	for i = 1; i < A.MahasiswaCount; i++ {
+		sementara = A.Mahasiswa[i]
 		j = i - 1
 		if kategori == "Nama" {
-			for j >= 0 && A.mahasiswa[j].Nama > sementara.Nama {
-				A.mahasiswa[j+1] = A.mahasiswa[j]
+			for j >= 0 && A.Mahasiswa[j].Nama > sementara.Nama {
+				A.Mahasiswa[j+1] = A.Mahasiswa[j]
 				j--
 			}
 		} else if kategori == "Tunggakan" {
-			for j >= 0 && A.mahasiswa[j].tunggakan > sementara.tunggakan {
-				A.mahasiswa[j+1] = A.mahasiswa[j]
+			for j >= 0 && A.Mahasiswa[j].tunggakan > sementara.tunggakan {
+				A.Mahasiswa[j+1] = A.Mahasiswa[j]
 				j--
 			}
 		}
-		A.mahasiswa[j+1] = sementara
+		A.Mahasiswa[j+1] = sementara
 	}
 }
 
 func insertionsortDescending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
-	for i = 1; i < A.mahasiswaCount; i++ {
-		sementara = A.mahasiswa[i]
+	for i = 1; i < A.MahasiswaCount; i++ {
+		sementara = A.Mahasiswa[i]
 		j = i - 1
 
 		if kategori == "Nama" {
-			for j >= 0 && A.mahasiswa[j].Nama < sementara.Nama {
-				A.mahasiswa[j+1] = A.mahasiswa[j]
+			for j >= 0 && A.Mahasiswa[j].Nama < sementara.Nama {
+				A.Mahasiswa[j+1] = A.Mahasiswa[j]
 				j--
 			}
 		} else if kategori == "Tunggakan" {
-			for j >= 0 && A.mahasiswa[j].tunggakan < sementara.tunggakan {
-				A.mahasiswa[j+1] = A.mahasiswa[j]
+			for j >= 0 && A.Mahasiswa[j].tunggakan < sementara.tunggakan {
+				A.Mahasiswa[j+1] = A.Mahasiswa[j]
 				j--
 			}
 		}
-		A.mahasiswa[j+1] = sementara
+		A.Mahasiswa[j+1] = sementara
 	}
 }
 
@@ -273,17 +273,17 @@ func insertionsortDescending(A *Database, kategori string) {
 
 func tampil(A *Database) {
 	var i int
-	if A.mahasiswaCount == 0 {
+	if A.MahasiswaCount == 0 {
 		fmt.Println("== Database Mahasiswa Kosong ==")
 	}else {
 		fmt.Println("== Daftar Status Pembayaran Mahasiswa ==")
 	
-		for i = 0; i < A.mahasiswaCount; i++ {
+		for i = 0; i < A.MahasiswaCount; i++ {
 		
-			fmt.Println("Nama :", A.mahasiswa[i].Nama)
-			fmt.Println("NIM  :", A.mahasiswa[i].NIM)
+			fmt.Println("Nama :", A.Mahasiswa[i].Nama)
+			fmt.Println("NIM  :", A.Mahasiswa[i].NIM)
 				
-			if A.mahasiswa[i].statuspembayaraan == true {
+			if A.Mahasiswa[i].statuspembayaraan == true {
 				fmt.Println("Status Pembayaran: Lunas")
 			} else {
 				fmt.Println("Status Pembayaran: Belum Lunas")
@@ -310,14 +310,15 @@ func bayar(A *Database) {
 		fmt.Print("Masukan Nominal Pembayaran: ")
 		fmt.Scan(&bayar.nominal)
 
-		A.mahasiswa[indeks].riwayat[A.mahasiswa[indeks].jumlahbayar] = bayar
-		A.mahasiswa[indeks].jumlahbayar++
-		A.mahasiswa[indeks].tunggakan = A.mahasiswa[indeks].tunggakan - bayar.nominal
-		A.mahasiswa[indeks].statuspembayaraan = true
+		A.Mahasiswa[indeks].riwayat[A.Mahasiswa[indeks].jumlahbayar] = bayar
+		A.Mahasiswa[indeks].jumlahbayar++
+		A.Mahasiswa[indeks].tunggakan = A.Mahasiswa[indeks].tunggakan - bayar.nominal
+		A.Mahasiswa[indeks].statuspembayaraan = true
 		fmt.Println("== Pembayaran Berhasil Dicatat ==")		
 	}
-	bdcbjdcjdc
-}
+	
+
+	
 func main () {
 	var pilih int
 	pilih = -1

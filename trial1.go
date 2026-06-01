@@ -342,10 +342,10 @@ func main() {
 		fmt.Println("5. Bayar")
 		fmt.Println("6. Cari Sequential")
 		fmt.Println("7. Cari Binary")
-		fmt.Println("8.  selectionsortAscending")
-		fmt.Println("9. selectionsortDescending")
-		fmt.Println("10. insertionsortAscending")
-		fmt.Println("11. insertionsortDescending")
+		fmt.Println("8. selectionsortAscending")
+		fmt.Println("9. 3selectionsortDescending")
+		fmt.Println("10. InsertionsortAscending")
+		fmt.Println("11. InsertionsortDescending")
 		fmt.Println("0. Keluar")
 
 		fmt.Print("Pilih: ")
@@ -381,15 +381,19 @@ func main() {
 		} else if pilih == 8 {
 
 			selectionsortAscending(&DB, "Nama")
+			tampil(&DB)
 		} else if pilih == 9 {
 
 			selectionsortDescending(&DB, "Nama")
+			tampil(&DB)
 		} else if pilih == 10 {
 
 			insertionsortAscending(&DB, "Nama")
+			tampil(&DB)
 		} else if pilih == 11 {
 
 			insertionsortDescending(&DB, "Nama")
+			tampil(&DB)
 		} else if pilih == 0 {
 
 			fmt.Println("Selesai")

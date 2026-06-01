@@ -23,6 +23,7 @@ type transaksi struct {
 
 var DB Database
 
+//A. Fungsi Tambah
 func tambah(A *Database) {
 	if A.MahasiswaCount < 100 {
 
@@ -44,6 +45,7 @@ func tambah(A *Database) {
 	}
 }
 
+//B. Fungsi Ubah (update)
 func ubah(A *Database) {
 	var nim string
 	var indeks int
@@ -66,6 +68,7 @@ func ubah(A *Database) {
 	}
 }
 
+//C. Fungsi Hapus
 func hapus(A *Database) {
 	var nim string
 	var indeks int
@@ -86,23 +89,43 @@ func hapus(A *Database) {
 		fmt.Println("== Mahasiswa Berhasil Dihapus ==")
 	}
 }
+//B. Fungsi Bayar ( mencatat nominal iuran yang masuk serta tanggal pembayaran)
+func bayar(A *Database) {
+	var nim string
+	var indeks int
+	var bayar transaksi
 
-// func cariMahasiswa(A *Database, nim string) int {
-// 	var i int
-// 	var indeks int
-// 	indeks = -1
+	fmt.Print("Masukkan NIM Mahasiswa yang akan melakukan pembayaran: ")
+	fmt.Scan(&nim)
+	squential(A, nim, &indeks)
 
-// 	for i = 0; i < A.MahasiswaCount; i++ {
-// 		if A.Mahasiswa[i].NIM == nim {
-// 			indeks = i
+	if indeks == -1 {
+		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
+	} else {
+		fmt.Print("Masukan Tanggal Pembayaran (DD/MM/YYYY): ")
+		fmt.Scan(&bayar.tanggal)
 
-// 			i = i + 1
-// 		}
+		fmt.Print("Masukan Nominal Pembayaran: ")
+		fmt.Scan(&bayar.nominal)
 
-// 	}
-// 	return indeks
-// }
+		A.Mahasiswa[indeks].riwayat[A.Mahasiswa[indeks].jumlahbayar] = bayar
+		A.Mahasiswa[indeks].jumlahbayar++
+		A.Mahasiswa[indeks].tunggakan = A.Mahasiswa[indeks].tunggakan - bayar.nominal
+		if A.Mahasiswa[indeks].tunggakan <= 0 {
+			A.Mahasiswa[indeks].tunggakan = 0
+			A.Mahasiswa[indeks].statuspembayaraan = true
+			fmt.Println("== Pembayaran Berhasil Dicatat ==")
+			// fmt.Println("Status pembayaran: Lunas")
+		} else {
+			A.Mahasiswa[indeks].statuspembayaraan = false
+			fmt.Println("== Pembayaran Berhasil Dicatat ==")
+			fmt.Println("Status pembayaran: Belum lunas")
+			fmt.Println("Sisa Tunggakan: ", A.Mahasiswa[indeks].tunggakan)
+		}
+	}
+}
 
+//c. Fungsi (Sequential)
 func squential(A *Database, nim string, indeks *int) {
 	var i int
 	*indeks = -1
@@ -113,6 +136,7 @@ func squential(A *Database, nim string, indeks *int) {
 		}
 	}
 }
+//C. Fungsi cari squential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
 func cari_squential(A *Database) {
 	var nim string
 	var indeks int
@@ -136,6 +160,7 @@ func cari_squential(A *Database) {
 	}
 }
 
+//c. Fungsi (Binary)
 func binary(A *Database, nim string, indeks *int) {
 	var kanan, kiri, tengah int
 
@@ -157,6 +182,7 @@ func binary(A *Database, nim string, indeks *int) {
 	}
 }
 
+//C. Fungsi Cari Sequential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
 func cari_binary(A *Database) {
 	var nim string
 	var indeks int
@@ -173,6 +199,7 @@ func cari_binary(A *Database) {
 	}
 }
 
+//D. Fungsi Insertionsort berdasarkan NIM untuk binary search
 func insertionsortNIM(A *Database) {
 	var i, j int
 	var sementara mahasiswa
@@ -187,6 +214,7 @@ func insertionsortNIM(A *Database) {
 	}
 }
 
+//D. Fungsi Selectionsort Asscending berdasakan nama dan tunggakan
 func selectionsortAscending(A *Database, kategori string) {
 	var i, j, indeks int
 	var sementara mahasiswa
@@ -210,6 +238,7 @@ func selectionsortAscending(A *Database, kategori string) {
 	}
 }
 
+//D. Fungsi Selectionsort Descending berdasarkan nama dan tunggakan
 func selectionsortDescending(A *Database, kategori string) {
 	var i, j, indeks int
 	var sementara mahasiswa
@@ -233,6 +262,7 @@ func selectionsortDescending(A *Database, kategori string) {
 	}
 }
 
+//D. Fungsi insetionsort Ascending berdasarkan nama dan tunggakan
 func insertionsortAscending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
@@ -255,6 +285,7 @@ func insertionsortAscending(A *Database, kategori string) {
 	}
 }
 
+//D. Fungsi insertionsort Descending berdasarkan nama dan tunggakan
 func insertionsortDescending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
@@ -277,65 +308,77 @@ func insertionsortDescending(A *Database, kategori string) {
 	}
 }
 
+//Fungsi tampil untuk menampilkan daftar mahasiswa beserta status pembayaran, tunggakan, dan riwayat pembayaran jika ada
 func tampil(A *Database) {
-	var i int
+	var i, k int
+
 	if A.MahasiswaCount == 0 {
 		fmt.Println("== Database Mahasiswa Kosong ==")
-	} else {
-		fmt.Println("== Daftar Status Pembayaran Mahasiswa ==")
+		return
+	}
 
-		for i = 0; i < A.MahasiswaCount; i++ {
+	fmt.Println("== Daftar Status Pembayaran Mahasiswa ==")
+	fmt.Println()
 
-			fmt.Println("Nama :", A.Mahasiswa[i].Nama)
-			fmt.Println("NIM  :", A.Mahasiswa[i].NIM)
-			fmt.Println("Tunggakan: ", A.Mahasiswa[i].tunggakan)
+	for i = 0; i < A.MahasiswaCount; i++ {
+		fmt.Println("Nama :", A.Mahasiswa[i].Nama)
+		fmt.Println("NIM  :", A.Mahasiswa[i].NIM)
+		fmt.Println("Tunggakan :", A.Mahasiswa[i].tunggakan)
 
-			if A.Mahasiswa[i].statuspembayaraan == true {
-				fmt.Println("Status Pembayaran: Lunas")
-			} else {
-				fmt.Println("Status Pembayaran: Belum Lunas")
-			}
+		if A.Mahasiswa[i].statuspembayaraan {
+			fmt.Println("Status Pembayaran : Lunas")
+		} else {
+			fmt.Println("Status Pembayaran : Belum Lunas")
 		}
+
+		fmt.Println("Riwayat Pembayaran:")
+
+		if A.Mahasiswa[i].jumlahbayar == 0 {
+			fmt.Println("Belum ada pembayaran")
+		}
+
+		for k = 0; k < A.Mahasiswa[i].jumlahbayar; k++ {
+			tr := A.Mahasiswa[i].riwayat[k]
+			fmt.Printf("  %d. Tanggal: %s | Nominal: %d\n",
+				k+1, tr.tanggal, tr.nominal)
+		}
+
+		fmt.Println("--------------------------------")
 	}
 }
 
-func bayar(A *Database) {
-	var nim string
-	var indeks int
-	var bayar transaksi
+func statistik(A *Database) {
+	var i, j int
+	var totalKas int
+	var jumlahLunas int
 
-	fmt.Print("Masukkan NIM Mahasiswa yang akan melakukan pembayaran: ")
-	fmt.Scan(&nim)
-	squential(A, nim, &indeks)
+	totalKas = 0
+	jumlahLunas = 0
 
-	if indeks == -1 {
-		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
-	} else {
-		fmt.Print("Masukan Tanggal Pembayaran (DD/MM/YYYY): ")
-		fmt.Scan(&bayar.tanggal)
+	for i = 0; i < A.MahasiswaCount; i++ {
 
-		fmt.Print("Masukan Nominal Pembayaran: ")
-		fmt.Scan(&bayar.nominal)
+		if A.Mahasiswa[i].statuspembayaraan == true {
+			jumlahLunas++
+		}
 
-		A.Mahasiswa[indeks].riwayat[A.Mahasiswa[indeks].jumlahbayar] = bayar
-		A.Mahasiswa[indeks].jumlahbayar++
-		A.Mahasiswa[indeks].tunggakan = A.Mahasiswa[indeks].tunggakan - bayar.nominal
-		if A.Mahasiswa[indeks].tunggakan <= 0{
-			A.Mahasiswa[indeks].tunggakan = 0
-			A.Mahasiswa[indeks].statuspembayaraan = true
-			fmt.Println("== Pembayaran Berhasil Dicatat ==")
-			// fmt.Println("Status pembayaran: Lunas")
-		}else {
-			A.Mahasiswa[indeks].statuspembayaraan = true
-			fmt.Println("== Pembayaran Berhasil Dicatat ==")
-			fmt.Println("Status pembayaran: Belum lunas")
-			fmt.Println("Sisa Tunggakan: ", A.Mahasiswa[indeks].tunggakan)
+		for j = 0; j < A.Mahasiswa[i].jumlahbayar; j++ {
+			totalKas += A.Mahasiswa[i].riwayat[j].nominal
 		}
 	}
+
+	fmt.Println("==============================")
+	fmt.Println("      STATISTIK KAS")
+	fmt.Println("==============================")
+	fmt.Println("Total Saldo Kas       :", totalKas)
+	fmt.Println("Mahasiswa Lunas       :", jumlahLunas)
+	fmt.Println("Total Mahasiswa       :", A.MahasiswaCount)
+	fmt.Println("==============================")
 }
 
 func main() {
 	var pilih int
+	var kategori int
+
 	pilih = -1
 
 	for pilih != 0 {
@@ -351,6 +394,7 @@ func main() {
 		fmt.Println("7. Cari Binary")
 		fmt.Println("8. Selectionsort")
 		fmt.Println("9. Insertionsort")
+		fmt.Println("10. Statistik")
 		fmt.Println("0. Keluar")
 
 		fmt.Print("Pilih: ")
@@ -385,44 +429,46 @@ func main() {
 
 		} else if pilih == 8 {
 			fmt.Println("=== Pilih pengurutan ===")
-			var kategori int
+			//var kategori int
 			fmt.Println("1. Nama ascending")
 			fmt.Println("2. Nama discending")
 			fmt.Println("3. Tunggakan ascending")
 			fmt.Println("4. Tunggakan discending")
 			fmt.Print("Pilih: ")
 			fmt.Scan(&kategori)
-			
-			if kategori == 1{
+
+			if kategori == 1 {
 				selectionsortAscending(&DB, "Nama")
-			}else if kategori == 2{
+			} else if kategori == 2 {
 				selectionsortDescending(&DB, "Nama")
-			}else if kategori == 3{
+			} else if kategori == 3 {
 				selectionsortAscending(&DB, "Tunggakan")
-			}else if kategori == 4{
+			} else if kategori == 4 {
 				selectionsortDescending(&DB, "Tunggakan")
-			}	
+			}
 			tampil(&DB)
 		} else if pilih == 9 {
 			fmt.Println("=== Pilih pengurutan ===")
-			var kategori int
+			//var kategori int
 			fmt.Println("1. Nama ascending")
 			fmt.Println("2. Nama discending")
 			fmt.Println("3. Tunggakan ascending")
 			fmt.Println("4. Tunggakan discending")
 			fmt.Print("Pilih: ")
 			fmt.Scan(&kategori)
-			
-			if kategori == 1{
+
+			if kategori == 1 {
 				insertionsortAscending(&DB, "Nama")
-			}else if kategori == 2{
+			} else if kategori == 2 {
 				insertionsortDescending(&DB, "Nama")
-			}else if kategori == 3{
+			} else if kategori == 3 {
 				insertionsortAscending(&DB, "Tunggakan")
-			}else if kategori == 4{
+			} else if kategori == 4 {
 				insertionsortDescending(&DB, "Tunggakan")
-			}	
+			}
 			tampil(&DB)
+		} else if pilih == 10 {
+			statistik(&DB)
 		} else if pilih == 0 {
 
 			fmt.Println("Selesai")

@@ -251,6 +251,7 @@ func bayar(A *Database) {
 		A.mahasiswa[indeks].statuspembayaraan = true
 		fmt.Println("== Pembayaran Berhasil Dicatat ==")		
 	}
+	bdcbjdcjdc
 }
 func main () {
 	var pilih int

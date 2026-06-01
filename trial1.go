@@ -405,5 +405,5 @@ func main() {
 	}
 }
 
-//ll
+//00
 //ubah

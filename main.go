@@ -1,6 +1,3 @@
-//contoh saja
-//baru contoh
-
 package main
 
 import "fmt"
@@ -37,7 +34,7 @@ func tambah(A *Database) {
 		fmt.Print("NIM: ")
 		fmt.Scan(&mhs.NIM)
 
-		mhs.tunggakan = 0
+		mhs.tunggakan = 5000
 		mhs.statuspembayaraan = false
 		A.Mahasiswa[A.MahasiswaCount] = mhs
 		A.MahasiswaCount++
@@ -291,6 +288,7 @@ func tampil(A *Database) {
 
 			fmt.Println("Nama :", A.Mahasiswa[i].Nama)
 			fmt.Println("NIM  :", A.Mahasiswa[i].NIM)
+			fmt.Println("Tunggakan: ", A.Mahasiswa[i].tunggakan)
 
 			if A.Mahasiswa[i].statuspembayaraan == true {
 				fmt.Println("Status Pembayaran: Lunas")
@@ -322,8 +320,17 @@ func bayar(A *Database) {
 		A.Mahasiswa[indeks].riwayat[A.Mahasiswa[indeks].jumlahbayar] = bayar
 		A.Mahasiswa[indeks].jumlahbayar++
 		A.Mahasiswa[indeks].tunggakan = A.Mahasiswa[indeks].tunggakan - bayar.nominal
-		A.Mahasiswa[indeks].statuspembayaraan = true
-		fmt.Println("== Pembayaran Berhasil Dicatat ==")
+		if A.Mahasiswa[indeks].tunggakan <= 0{
+			A.Mahasiswa[indeks].tunggakan = 0
+			A.Mahasiswa[indeks].statuspembayaraan = true
+			fmt.Println("== Pembayaran Berhasil Dicatat ==")
+			// fmt.Println("Status pembayaran: Lunas")
+		}else {
+			A.Mahasiswa[indeks].statuspembayaraan = true
+			fmt.Println("== Pembayaran Berhasil Dicatat ==")
+			fmt.Println("Status pembayaran: Belum lunas")
+			fmt.Println("Sisa Tunggakan: ", A.Mahasiswa[indeks].tunggakan)
+		}
 	}
 }
 
@@ -342,10 +349,8 @@ func main() {
 		fmt.Println("5. Bayar")
 		fmt.Println("6. Cari Sequential")
 		fmt.Println("7. Cari Binary")
-		fmt.Println("8. selectionsortAscending")
-		fmt.Println("9. 3selectionsortDescending")
-		fmt.Println("10. InsertionsortAscending")
-		fmt.Println("11. InsertionsortDescending")
+		fmt.Println("8. Selectionsort")
+		fmt.Println("9. Insertionsort")
 		fmt.Println("0. Keluar")
 
 		fmt.Print("Pilih: ")
@@ -379,27 +384,50 @@ func main() {
 			cari_binary(&DB)
 
 		} else if pilih == 8 {
+			fmt.Println("=== Pilih pengurutan ===")
+			var kategori int
+			fmt.Println("1. Nama ascending")
+			fmt.Println("2. Nama discending")
+			fmt.Println("3. Tunggakan ascending")
+			fmt.Println("4. Tunggakan discending")
+			fmt.Print("Pilih: ")
+			fmt.Scan(&kategori)
 			
-			selectionsortAscending(&DB, "Nama")
+			if kategori == 1{
+				selectionsortAscending(&DB, "Nama")
+			}else if kategori == 2{
+				selectionsortDescending(&DB, "Nama")
+			}else if kategori == 3{
+				selectionsortAscending(&DB, "Tunggakan")
+			}else if kategori == 4{
+				selectionsortDescending(&DB, "Tunggakan")
+			}	
 			tampil(&DB)
 		} else if pilih == 9 {
-
-			selectionsortDescending(&DB, "Nama")
-			tampil(&DB)
-		} else if pilih == 10 {
-
-			insertionsortAscending(&DB, "Nama")
-			tampil(&DB)
-		} else if pilih == 11 {
-
-			insertionsortDescending(&DB, "Nama")
+			fmt.Println("=== Pilih pengurutan ===")
+			var kategori int
+			fmt.Println("1. Nama ascending")
+			fmt.Println("2. Nama discending")
+			fmt.Println("3. Tunggakan ascending")
+			fmt.Println("4. Tunggakan discending")
+			fmt.Print("Pilih: ")
+			fmt.Scan(&kategori)
+			
+			if kategori == 1{
+				insertionsortAscending(&DB, "Nama")
+			}else if kategori == 2{
+				insertionsortDescending(&DB, "Nama")
+			}else if kategori == 3{
+				insertionsortAscending(&DB, "Tunggakan")
+			}else if kategori == 4{
+				insertionsortDescending(&DB, "Tunggakan")
+			}	
 			tampil(&DB)
 		} else if pilih == 0 {
 
 			fmt.Println("Selesai")
 
 		} else {
-
 			fmt.Println("Menu salah")
 		}
 	}

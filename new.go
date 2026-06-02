@@ -320,10 +320,7 @@ func bayar(A *dataMahasiswa) {
 
 		//proces simpan riwayat
 		if A.data[indeks].jmlriwayat < 100 {
-			A.data[indeks].riwayat[A.data[indeks].jmlriwayat] = Pembayaran{
-				nominal: bayar.nominal,
-				waktu:   bayar.waktu,
-			}
+			A.data[indeks].riwayat[A.data[indeks].jmlriwayat] = bayar
 			A.data[indeks].jmlriwayat++
 		}
 
@@ -463,38 +460,40 @@ func cari_sequential(A *dataMahasiswa) {
 }
 
 //=================BINARY======================
-func binary(A *dataMahasiswa, nim string) int {
+func binary(A *dataMahasiswa, nim string, indeks *int) {
+	*indeks = -1
 	kiri := 0
 	kanan := A.jmlMahasiswa - 1
 
 	for kiri <= kanan {
 		tengah := (kiri + kanan) / 2
 		if A.data[tengah].nim == nim {
-			return tengah
+			*indeks = tengah
+			kiri = kanan + 1
 		} else if A.data[tengah].nim < nim {
 			kiri = tengah + 1
 		} else {
 			kanan = tengah - 1
 		}
 	}
-	return -1
 }
 
-func binaryNama(A *dataMahasiswa, nama string) int {
+func binaryNama(A *dataMahasiswa, nama string, indeks *int) {
+	*indeks = -1
 	kiri := 0
 	kanan := A.jmlMahasiswa - 1
 
 	for kiri <= kanan {
 		tengah := (kiri + kanan) / 2
 		if A.data[tengah].nama == nama {
-			return tengah
+			*indeks = tengah
+			kiri = kanan + 1
 		} else if A.data[tengah].nama < nama {
 			kiri = tengah + 1
 		} else {
 			kanan = tengah - 1
 		}
 	}
-	return -1
 }
 
 func cari_binary(A *dataMahasiswa) {
@@ -600,10 +599,10 @@ func tampilkanDetailMahasiswa(A *dataMahasiswa, indeks int) {
 			fmt.Println("-------------------------------------------------------------------------------")
 			fmt.Println("                         RIWAYAT PEMBAYARAN")
 			fmt.Println("-------------------------------------------------------------------------------")
-			fmt.Printf("%-4s %-12s %-12s\n", "No", "Tanggal", "Nominal")
-			fmt.Println("----+------------+------------")
+			fmt.Printf("%-3s | %-12s | %-12s\n", "No", "Tanggal", "Nominal")
+			fmt.Println("----+--------------+----------")
 			for i := 0; i < A.data[indeks].jmlriwayat; i++ {
-				fmt.Printf("%-4d %-12s Rp %-9d\n", i+1, A.data[indeks].riwayat[i].waktu, A.data[indeks].riwayat[i].nominal)
+				fmt.Printf("%-3d | %-12s | Rp %-9d\n", i+1, A.data[indeks].riwayat[i].waktu, A.data[indeks].riwayat[i].nominal)
 			}
 			fmt.Println("-------------------------------------------------------------------------------")
 		}

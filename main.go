@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import ("fmt"
+		"time"
+)
 
 type mahasiswa struct {
 	NIM               string
@@ -69,7 +71,15 @@ func ubah(A *Database) {
 		fmt.Print("NIM: ")
 		fmt.Scan(&A.Mahasiswa[indeks].NIM)
 		
-		fmt.Println("== Mahasiswa Berhasil Diupdate ==")
+		for i := 0; i < A.MahasiswaCount; i++ {
+		if i != indeks && A.Mahasiswa[i].NIM == A.Mahasiswa[indeks].NIM {
+
+		fmt.Println("!!! NIM sudah digunakan !!!")
+		fmt.Print("Masukkan NIM Baru: ")
+		fmt.Scan(&A.Mahasiswa[indeks].NIM)
+	}
+	}
+	fmt.Println("== Mahasiswa Berhasil Diupdate ==")
 	}
 }
 
@@ -106,10 +116,9 @@ func bayar(A *Database) {
 
 	if indeks == -1 {
 		fmt.Println("== Mahasiswa Tidak Ditemukan ==")
-	} else {
-		fmt.Print("Masukan Tanggal Pembayaran (DD/MM/YYYY): ")
-		fmt.Scan(&bayar.tanggal)
-
+		return
+	}
+		bayar.tanggal = time.Now().Format("02/01/2006")
 		fmt.Print("Masukan Nominal Pembayaran: ")
 		fmt.Scan(&bayar.nominal)
 
@@ -128,7 +137,6 @@ func bayar(A *Database) {
 			fmt.Println("Sisa Tunggakan: ", A.Mahasiswa[indeks].tunggakan)
 		}
 	}
-}
 
 //c. Fungsi (Sequential)
 func squential(A *Database, nim string, indeks *int) {
@@ -370,8 +378,6 @@ func statistik(A *Database) {
 			totalKas += A.Mahasiswa[i].riwayat[j].nominal
 		}
 	}
-
-	
 	fmt.Println("STATISTIK KAS")
 	fmt.Println("==============================")
 	fmt.Println("Total Saldo Kas       :", totalKas)

@@ -347,33 +347,6 @@ func tampil(A *Database) {
 	}
 }
 
-func statistik(A *Database) {
-	var i, j int
-	var totalKas int
-	var jumlahLunas int
-
-	totalKas = 0
-	jumlahLunas = 0
-
-	for i = 0; i < A.MahasiswaCount; i++ {
-
-		if A.Mahasiswa[i].statuspembayaraan == true {
-			jumlahLunas++
-		}
-
-		for j = 0; j < A.Mahasiswa[i].jumlahbayar; j++ {
-			totalKas += A.Mahasiswa[i].riwayat[j].nominal
-		}
-	}
-
-	fmt.Println("==============================")
-	fmt.Println("      STATISTIK KAS")
-	fmt.Println("==============================")
-	fmt.Println("Total Saldo Kas       :", totalKas)
-	fmt.Println("Mahasiswa Lunas       :", jumlahLunas)
-	fmt.Println("Total Mahasiswa       :", A.MahasiswaCount)
-	fmt.Println("==============================")
-}
 
 func main() {
 	var pilih int

@@ -441,7 +441,7 @@ func main() {
 			}
 			tampil(&DB)
 		} else if pilih == 10 {
-			statistik(&DB)
+			//statistik(&DB)
 		} else if pilih == 0 {
 
 			fmt.Println("Selesai")

@@ -26,20 +26,25 @@ var DB Database
 //A. Fungsi Tambah
 func tambah(A *Database) {
 	if A.MahasiswaCount < 100 {
-
-		var mhs mahasiswa
+	for {
+	var mhs mahasiswa
 
 		fmt.Print("Nama: ")
 		fmt.Scan(&mhs.Nama)
-
+		if mhs.Nama == "0" || mhs.Nama == "keluar" {
+			return
+		}
 		fmt.Print("NIM: ")
 		fmt.Scan(&mhs.NIM)
-
+		if mhs.	NIM == "0" || mhs.NIM == "keluar" {
+			return
+		}
 		mhs.tunggakan = 5000
 		mhs.statuspembayaraan = false
 		A.Mahasiswa[A.MahasiswaCount] = mhs
 		A.MahasiswaCount++
 		fmt.Println("== Mahasiswa Berhasil Ditambahkan ==")
+	}
 	} else {
 		fmt.Println("== Database Mahasiswa Penuh ==")
 	}
@@ -63,7 +68,7 @@ func ubah(A *Database) {
 
 		fmt.Print("NIM: ")
 		fmt.Scan(&A.Mahasiswa[indeks].NIM)
-
+		
 		fmt.Println("== Mahasiswa Berhasil Diupdate ==")
 	}
 }
@@ -347,7 +352,33 @@ func tampil(A *Database) {
 	}
 }
 
+func statistik(A *Database) {
+	var i, j int
+	var totalKas int
+	var jumlahLunas int
 
+	totalKas = 0
+	jumlahLunas = 0
+
+	for i = 0; i < A.MahasiswaCount; i++ {
+
+		if A.Mahasiswa[i].statuspembayaraan == true {
+			jumlahLunas++
+		}
+
+		for j = 0; j < A.Mahasiswa[i].jumlahbayar; j++ {
+			totalKas += A.Mahasiswa[i].riwayat[j].nominal
+		}
+	}
+
+	
+	fmt.Println("STATISTIK KAS")
+	fmt.Println("==============================")
+	fmt.Println("Total Saldo Kas       :", totalKas)
+	fmt.Println("Mahasiswa Lunas       :", jumlahLunas)
+	fmt.Println("Total Mahasiswa       :", A.MahasiswaCount)
+	fmt.Println("==============================")
+}
 func main() {
 	var pilih int
 	var kategori int

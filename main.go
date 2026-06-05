@@ -161,7 +161,6 @@ func ubah(A *Database) {
 		if err := saveData(); err != nil {
 			fmt.Println("Peringatan: Gagal menyimpan data:", err)
 		}
-		return
 	}
 }
 
@@ -199,10 +198,11 @@ func hapus(A *Database) {
 				A.Mahasiswa[i] = A.Mahasiswa[i+1]
 			}
 			A.MahasiswaCount--
-			A.Mahasiswa[A.MahasiswaCount] = mahasiswa{}
+			A.Mahasiswa[A.MahasiswaCount] = mahasiswa{} //<= set jadi default
 			fmt.Println("== Mahasiswa Berhasil Dihapus ==")
 			fmt.Println()
 
+			// Simpan ke file setelah perubahan
 			if err := saveData(); err != nil {
 				fmt.Println("Peringatan: Gagal menyimpan data:", err)
 			}
@@ -270,6 +270,7 @@ func bayar(A *Database) {
 			fmt.Println()
 		}
 
+		// Simpan ke file setelah perubahan
 		if err := saveData(); err != nil {
 			fmt.Println("Peringatan: Gagal menyimpan data:", err)
 		}

@@ -1,0 +1,5705 @@
+{
+  "mahasiswa": [
+    {
+      "nim": "01",
+      "nama": "danar",
+      "tunggakan": 5000,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "02",
+      "nama": "udin",
+      "tunggakan": 0,
+      "status_pembayaraan": true,
+      "riwayat": [
+        {
+          "tanggal": "05/06/2026",
+          "nominal": 5000
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 1
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    },
+    {
+      "nim": "",
+      "nama": "",
+      "tunggakan": 0,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 0
+    }
+  ],
+  "mahasiswa_count": 2
+}

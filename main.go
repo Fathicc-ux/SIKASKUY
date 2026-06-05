@@ -38,7 +38,7 @@ func saveData() error {
 	defer file.Close()
 
 	encoder := json.NewEncoder(file)
-	encoder.SetIndent("", "  ") // biar rapi saat dilihat di editor
+	encoder.SetIndent("", "  ") 
 	err = encoder.Encode(DB)
 	return err
 }
@@ -46,7 +46,6 @@ func saveData() error {
 func loadData() error {
 	file, err := os.Open(dataFile)
 	if err != nil {
-		// File tidak ada, berarti program baru dijalankan pertama kali
 		return nil
 	}
 	defer file.Close()
@@ -356,10 +355,10 @@ func binary(A *Database, nim string, indeks *int) {
 	}
 }
 
-// H. Fungsi Cari Sequential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
+// H. Fungsi Cari Binary sub fungsi binary0 untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
 func cari_binary(A *Database) {
 	fmt.Println()
-	fmt.Println("=== CARI SEQUENTIAL ===")
+	fmt.Println("=== CARI BINARY ===")
 	fmt.Println("Ketik 'x' atau 'keluar' kapan saja untuk membatalkan")
 	fmt.Println()
 
@@ -385,8 +384,15 @@ func cari_binary(A *Database) {
 		} else if indeks == -1 {
 			fmt.Println("== Mahasiswa Tidak Ditemukan ==")
 		} else {
-			fmt.Println("NIM  :", A.Mahasiswa[indeks].NIM)
-			fmt.Println("Nama :", A.Mahasiswa[indeks].Nama)
+			if A.Mahasiswa[indeks].StatusPembayaraan == false {
+				fmt.Println("== Daftar Mahasiswa Belum Lunas ==")
+				fmt.Println("NIM  :", A.Mahasiswa[indeks].NIM)
+				fmt.Println("Nama :", A.Mahasiswa[indeks].Nama)
+			} else {
+				fmt.Println("Mahasiswa Sudah Membayar secara Lunas")
+				fmt.Println("NIM  :", A.Mahasiswa[indeks].NIM)
+				fmt.Println("Nama :", A.Mahasiswa[indeks].Nama)
+			}
 			fmt.Println()
 		}
 	}

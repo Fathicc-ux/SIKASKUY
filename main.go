@@ -636,6 +636,7 @@ func pilihinsertion(A *Database) {
 
 func main() {
 	var pilih int
+
 	for {
 		fmt.Println()
 		fmt.Println("===== SIKAS =====")

@@ -210,7 +210,7 @@ func hapus(A *Database) {
 	}
 }
 
-// B. Fungsi Bayar ( mencatat nominal iuran yang masuk serta tanggal pembayaran)
+// D. Fungsi Bayar ( mencatat nominal iuran yang masuk serta tanggal pembayaran)
 func bayar(A *Database) {
 	fmt.Println()
 	fmt.Println("=== PEMBAYARAN KAS MAHASISWA ===")
@@ -277,7 +277,7 @@ func bayar(A *Database) {
 	}
 }
 
-// c. Fungsi (Sequential)
+// E. Fungsi (Sequential)
 func squential(A *Database, nim string, indeks *int) {
 	var i int
 	*indeks = -1
@@ -289,7 +289,7 @@ func squential(A *Database, nim string, indeks *int) {
 	}
 }
 
-// C. Fungsi cari squential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
+// F. Fungsi cari squential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
 func cari_squential(A *Database) {
 	fmt.Println()
 	fmt.Println("=== CARI SEQUENTIAL ===")
@@ -334,7 +334,7 @@ func cari_squential(A *Database) {
 	}
 }
 
-// c. Fungsi (Binary)
+// G. Fungsi (Binary)
 func binary(A *Database, nim string, indeks *int) {
 	var kanan, kiri, tengah int
 
@@ -356,7 +356,7 @@ func binary(A *Database, nim string, indeks *int) {
 	}
 }
 
-// C. Fungsi Cari Sequential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
+// H. Fungsi Cari Sequential sub fungsi squential untuk mencari mahasiswa yang belum bayar berdasarkan NIM dan Nama yang diinputkan
 func cari_binary(A *Database) {
 	fmt.Println()
 	fmt.Println("=== CARI SEQUENTIAL ===")
@@ -392,7 +392,7 @@ func cari_binary(A *Database) {
 	}
 }
 
-// D. Fungsi Insertionsort berdasarkan NIM untuk binary search
+// I. Fungsi Insertionsort berdasarkan NIM untuk binary search
 func insertionsortNIM(A *Database) {
 	var i, j int
 	var sementara mahasiswa
@@ -407,7 +407,7 @@ func insertionsortNIM(A *Database) {
 	}
 }
 
-// D. Fungsi Selectionsort Asscending berdasakan nama dan tunggakan
+// J. Fungsi Selectionsort Asscending berdasakan nama dan tunggakan
 func selectionsortAscending(A *Database, kategori string) {
 	var i, j, indeks int
 	var sementara mahasiswa
@@ -431,7 +431,7 @@ func selectionsortAscending(A *Database, kategori string) {
 	}
 }
 
-// D. Fungsi Selectionsort Descending berdasarkan nama dan tunggakan
+// K. Fungsi Selectionsort Descending berdasarkan nama dan tunggakan
 func selectionsortDescending(A *Database, kategori string) {
 	var i, j, indeks int
 	var sementara mahasiswa
@@ -455,7 +455,7 @@ func selectionsortDescending(A *Database, kategori string) {
 	}
 }
 
-// D. Fungsi insetionsort Ascending berdasarkan nama dan tunggakan
+// L. Fungsi insertionsort Ascending berdasarkan nama dan tunggakan
 func insertionsortAscending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
@@ -478,7 +478,7 @@ func insertionsortAscending(A *Database, kategori string) {
 	}
 }
 
-// D. Fungsi insertionsort Descending berdasarkan nama dan tunggakan
+// M. Fungsi insertionsort Descending berdasarkan nama dan tunggakan
 func insertionsortDescending(A *Database, kategori string) {
 	var i, j int
 	var sementara mahasiswa
@@ -501,7 +501,7 @@ func insertionsortDescending(A *Database, kategori string) {
 	}
 }
 
-// Fungsi tampil untuk menampilkan daftar mahasiswa beserta status pembayaran, tunggakan, dan riwayat pembayaran jika ada
+// N. Fungsi tampil untuk menampilkan daftar mahasiswa beserta status pembayaran, tunggakan, dan riwayat pembayaran jika ada
 func tampil(A *Database) {
 	var i, k int
 
@@ -538,7 +538,7 @@ func tampil(A *Database) {
 		fmt.Println("--------------------------------")
 	}
 }
-
+// O. Fungsi statistik untuk menampilkan total saldo kas, jumlah mahasiswa yang sudah lunas, dan total mahasiswa
 func statistik(A *Database) {
 	var i, j int
 	var totalKas int
@@ -637,6 +637,12 @@ func pilihinsertion(A *Database) {
 
 func main() {
 	var pilih int
+
+	if err := loadData(); err != nil {
+        fmt.Println("Peringatan: Gagal memuat data:", err)
+    } else {
+        fmt.Println("Data berhasil dimuat.")
+    }
 
 	for {
 		fmt.Println()

@@ -1,14 +1,14 @@
 {
   "mahasiswa": [
     {
-      "nim": "109082500178",
+      "nim": "101",
       "nama": "zaki",
-      "tunggakan": 5000,
-      "status_pembayaraan": false,
+      "tunggakan": 0,
+      "status_pembayaraan": true,
       "riwayat": [
         {
-          "tanggal": "",
-          "nominal": 0
+          "tanggal": "05/06/2026",
+          "nominal": 5000
         },
         {
           "tanggal": "",
@@ -55,10 +55,67 @@
           "nominal": 0
         }
       ],
-      "jumlah_bayar": 0
+      "jumlah_bayar": 1
     },
     {
-      "nim": "109082500127",
+      "nim": "102",
+      "nama": "danar",
+      "tunggakan": 2000,
+      "status_pembayaraan": false,
+      "riwayat": [
+        {
+          "tanggal": "05/06/2026",
+          "nominal": 3000
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        },
+        {
+          "tanggal": "",
+          "nominal": 0
+        }
+      ],
+      "jumlah_bayar": 1
+    },
+    {
+      "nim": "103",
       "nama": "fatih",
       "tunggakan": 5000,
       "status_pembayaraan": false,
@@ -115,66 +172,9 @@
       "jumlah_bayar": 0
     },
     {
-      "nim": "109082500169",
-      "nama": "danar",
+      "nim": "104",
+      "nama": "hakim",
       "tunggakan": 5000,
-      "status_pembayaraan": false,
-      "riwayat": [
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        },
-        {
-          "tanggal": "",
-          "nominal": 0
-        }
-      ],
-      "jumlah_bayar": 0
-    },
-    {
-      "nim": "",
-      "nama": "",
-      "tunggakan": 0,
       "status_pembayaraan": false,
       "riwayat": [
         {
@@ -5701,5 +5701,5 @@
       "jumlah_bayar": 0
     }
   ],
-  "mahasiswa_count": 3
+  "mahasiswa_count": 4
 }
